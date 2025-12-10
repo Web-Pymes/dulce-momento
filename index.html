@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Dulce Momento - Tortas personalizadas, catering para eventos y repostería artesanal premium. Creamos momentos inolvidables.">
+    <title>Dulce Momento | Catering y Repostería</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#inicio" class="nav-logo">Dulce Momento</a>
+            <div class="nav-links" id="navLinks">
+                <a href="#inicio" class="nav-link">Inicio</a>
+                <a href="#servicios" class="nav-link">Especialidades</a>
+                <a href="#proceso" class="nav-link">Proceso</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-grid">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2L9.5 9.5L2 12L9.5 14.5L12 22L14.5 14.5L22 12L14.5 9.5L12 2Z" />
+                        </svg>
+                        Reposteria artesanal premium
+                    </div>
+                    <h1 class="hero-title">Creamos momentos inolvidables</h1>
+                    <p class="hero-description">Tortas personalizadas, catering para eventos y dulces que harán de tu
+                        celebración algo único.</p>
+                    <div class="hero-buttons">
+                        <a href="https://wa.me/56943997250" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-primary">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                class="icon-small">
+                                <polyline points="20 12 20 22 4 22 4 12" />
+                                <rect x="2" y="7" width="20" height="5" />
+                                <line x1="12" y1="22" x2="12" y2="7" />
+                                <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z" />
+                                <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z" />
+                            </svg>
+                            Hacer pedido
+                        </a>
+                        <a href="#servicios" class="btn btn-secondary">Ver catálogo</a>
+                    </div>
+                </div>
+                <div class="hero-image-container">
+                    <div class="hero-image-decor"></div>
+                    <div class="hero-carousel">
+                        <img src="images/hero-1.png" alt="Tortas Premium" class="hero-image active">
+                        <img src="images/hero-2.png" alt="Catering Eventos" class="hero-image">
+                        <img src="images/hero-3.png" alt="Desayunos Sorpresa" class="hero-image">
+                    </div>
+                    <div class="hero-floating-card">
+                        <div class="floating-icons">
+                            <svg viewBox="0 0 24 24" fill="currentColor" class="heart-icon">
+                                <path
+                                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                            </svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor" class="heart-icon">
+                                <path
+                                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                            </svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor" class="heart-icon">
+                                <path
+                                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                            </svg>
+                        </div>
+                        <span class="floating-text">Muchos clientes felices, sé uno de ellos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <details class="accordion">
+                <summary class="section-header accordion-summary">
+                    <span class="section-label">Nuestras especialidades</span>
+                    <h2 class="section-title">
+                        Dulzura en cada detalle
+                    </h2>
+                    <p class="section-description">Creaciones artesanales hechas con ingredientes premium y mucho amor.
+                    </p>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="chevron-icon">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </summary>
+                <div class="services-grid accordion-content">
+                    <!-- Tortas -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8" />
+                                <path d="M4 16s.5-1 2-1 2.5 2 4 2 2.5-2 4-2 2.5 2 4 2 2-1 2-1" />
+                                <path d="M2 21h20" />
+                                <path d="M7 8v2" />
+                                <path d="M12 8v2" />
+                                <path d="M17 8v2" />
+                                <path d="M7 4h.01" />
+                                <path d="M12 4h.01" />
+                                <path d="M17 4h.01" />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Tortas Personalizadas</h3>
+                        <p class="service-desc">Tortas artesanales para cumpleaños, bodas y eventos especiales.</p>
+                        <div class="service-footer">
+                            <span class="service-price">Desde $35.000</span>
+                            <span class="service-duration">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    class="icon-small">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polyline points="12,6 12,12 16,14" />
+                                </svg>
+                                48h anticipación
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Catering -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2" />
+                                <path d="M7 2v20" />
+                                <path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7" />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Catering Eventos</h3>
+                        <p class="service-desc">Menú completo para fiestas: desde 20 hasta 200 personas.</p>
+                        <div class="service-footer">
+                            <span class="service-price">$12.000/persona</span>
+                            <span class="service-duration">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    class="icon-small">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polyline points="12,6 12,12 16,14" />
+                                </svg>
+                                3 días anticipación
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Desayuno -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
+                                <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" />
+                                <line x1="6" y1="1" x2="6" y2="4" />
+                                <line x1="10" y1="1" x2="10" y2="4" />
+                                <line x1="14" y1="1" x2="14" y2="4" />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Box de Desayuno</h3>
+                        <p class="service-desc">Sorprende con un desayuno gourmet a domicilio.</p>
+                        <div class="service-footer">
+                            <span class="service-price">Desde $25.000</span>
+                            <span class="service-duration">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    class="icon-small">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polyline points="12,6 12,12 16,14" />
+                                </svg>
+                                24h anticipación
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Mesa Dulces -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                                <path d="M2 12h20" />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Mesa de Dulces</h3>
+                        <p class="service-desc">Cupcakes, macarons, galletas decoradas y más para tu evento.</p>
+                        <div class="service-footer">
+                            <span class="service-price">Desde $60.000</span>
+                            <span class="service-duration">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    class="icon-small">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polyline points="12,6 12,12 16,14" />
+                                </svg>
+                                5 días anticipación
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </details>
+        </div>
+    </section>
+
+    <!-- Process Section (Collapsible) -->
+    <section id="proceso" class="process">
+        <div class="container">
+            <details class="accordion">
+                <summary class="section-title text-center accordion-summary flex-row">
+                    ¿Cómo funciona?
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="chevron-icon"
+                        style="margin-top: 0;">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </summary>
+                <div class="process-grid accordion-content">
+                    <div class="process-step">
+                        <div class="step-number">01</div>
+                        <h3 class="step-title">Contáctanos</h3>
+                        <p class="step-desc">Escríbenos por WhatsApp o completa el formulario.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">02</div>
+                        <h3 class="step-title">Diseñamos juntos</h3>
+                        <p class="step-desc">Creamos el diseño perfecto para tu evento.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">03</div>
+                        <h3 class="step-title">Preparamos</h3>
+                        <p class="step-desc">Elaboramos tu pedido con ingredientes frescos.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">04</div>
+                        <h3 class="step-title">Entregamos</h3>
+                        <p class="step-desc">Recibe tu pedido en la fecha acordada.</p>
+                    </div>
+                </div>
+            </details>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="nosotros" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="section-label">Nuestra historia</span>
+                    <h2 class="section-title">Pasión por la repostería</h2>
+                    <p class="about-text">Somos una pastelería artesanal familiar con 8 años de experiencia. Cada
+                        creación es hecha con amor, ingredientes premium y sin conservantes artificiales.</p>
+                    <div class="about-location">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                        Despacho a domicilio - Retiro en Providencia
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span class="section-label">Contacto</span>
+                    <h2 class="section-title">Haz tu pedido especial</h2>
+                    <p class="contact-text">Cuéntanos tu idea y la haremos realidad. Respondemos en menos de 4 horas.
+                    </p>
+                    <div class="contact-details">
+                        <h3 class="contact-details-title">Información de contacto</h3>
+                        <p><strong>Teléfono:</strong> +56 9 4399 7250</p>
+                        <p><strong>Email:</strong> pedidos@dulcemomento.cl</p>
+                        <p><strong>Horario:</strong> Lunes a Sábado, 9:00 - 19:00</p>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="+56 9 1234 5678" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje (tipo de evento, fecha, invitados)</label>
+                            <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos más detalles..." rows="4"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                class="icon-small">
+                                <line x1="22" y1="2" x2="11" y2="13" />
+                                <polygon points="22,2 15,22 11,13 2,9" />
+                            </svg>
+                            Enviar mensaje
+                        </button>
+                    </form>
+                    <div id="formSuccess" class="form-success" style="display: none;">
+                        <div class="success-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                <polyline points="22,4 12,14.01 9,11.01" />
+                            </svg>
+                        </div>
+                        <h3>¡Pedido recibido!</h3>
+                        <p>Te confirmaremos la disponibilidad pronto.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3 class="footer-logo">Dulce Momento</h3>
+                    <p class="footer-tagline">Creamos momentos inolvidables</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li>
+                            <a href="tel:+56943997250">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    class="icon-small">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                                </svg>
+                                +56 9 4399 7250
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:pedidos@dulcemomento.cl">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    class="icon-small">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                    <polyline points="22,6 12,13 2,6" />
+                                </svg>
+                                pedidos@dulcemomento.cl
+                            </a>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                class="icon-small">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            Santiado, Chile
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Dulce Momento. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/56943997250" target="_blank" rel="noopener noreferrer" class="whatsapp-btn"
+        aria-label="Contactar por WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
